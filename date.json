@@ -1,0 +1,642 @@
+[
+  {
+      "continent": "south_america",
+      "city": "Buenos Aires",
+      "title": "Explora la cultura argentina",
+      "imgURL": "https://example.com/buenosaires.jpg",
+      "price": 800,
+      "days": 7
+  },
+  {
+      "continent": "north_america",
+      "city": "Nueva York",
+      "title": "Descubre la Gran Manzana",
+      "imgURL": "https://example.com/nyc.jpg",
+      "price": 1200,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "El Cairo",
+      "title": "Viaje a las pirámides de Egipto",
+      "imgURL": "https://example.com/cairo.jpg",
+      "price": 900,
+      "days": 6
+  },
+  {
+      "continent": "asia",
+      "city": "Tokio",
+      "title": "Explora la cultura japonesa",
+      "imgURL": "https://example.com/tokyo.jpg",
+      "price": 1500,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "París",
+      "title": "Visita la ciudad del amor",
+      "imgURL": "https://example.com/paris.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Río de Janeiro",
+      "title": "Descubre las playas de Brasil",
+      "imgURL": "https://example.com/riodejaneiro.jpg",
+      "price": 850,
+      "days": 8
+  },
+  {
+      "continent": "north_america",
+      "city": "Los Ángeles",
+      "title": "Explora la ciudad de los sueños",
+      "imgURL": "https://example.com/losangeles.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "africa",
+      "city": "Ciudad del Cabo",
+      "title": "Explora la belleza de Sudafrica",
+      "imgURL": "https://example.com/capetown.jpg",
+      "price": 950,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Bangkok",
+      "title": "Descubre la capital de Tailandia",
+      "imgURL": "https://example.com/bangkok.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Londres",
+      "title": "Visita la capital británica",
+      "imgURL": "https://example.com/london.jpg",
+      "price": 1000,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Machu Picchu",
+      "title": "Explora la antigua ciudad inca",
+      "imgURL": "https://example.com/machupicchu.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "San Francisco",
+      "title": "Descubre la bahía de San Francisco",
+      "imgURL": "https://example.com/sanfrancisco.jpg",
+      "price": 1150,
+      "days": 6
+  },
+  {
+      "continent": "africa",
+      "city": "Marrakech",
+      "title": "Viaje a la ciudad de las especias",
+      "imgURL": "https://example.com/marrakech.jpg",
+      "price": 850,
+      "days": 5
+  },
+  {
+      "continent": "asia",
+      "city": "Pekín",
+      "title": "Explora la capital de China",
+      "imgURL": "https://example.com/beijing.jpg",
+      "price": 1400,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Roma",
+      "title": "Descubre la antigua Roma",
+      "imgURL": "https://example.com/rome.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Bogotá",
+      "title": "Explora la capital de Colombia",
+      "imgURL": "https://example.com/bogota.jpg",
+      "price": 820,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Chicago",
+      "title": "Descubre la ciudad de los vientos",
+      "imgURL": "https://example.com/chicago.jpg",
+      "price": 1050,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Nairobi",
+      "title": "Safari en Kenia",
+      "imgURL": "https://example.com/nairobi.jpg",
+      "price": 1200,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Hong Kong",
+      "title": "Explora la ciudad asiática",
+      "imgURL": "https://example.com/hongkong.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Ámsterdam",
+      "title": "Visita la ciudad de los canales",
+      "imgURL": "https://example.com/amsterdam.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Santiago",
+      "title": "Descubre la capital chilena",
+      "imgURL": "https://example.com/santiago.jpg",
+      "price": 850,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Las Vegas",
+      "title": "Explora la ciudad del entretenimiento",
+      "imgURL": "https://example.com/lasvegas.jpg",
+      "price": 1150,
+      "days": 4
+  },
+  {
+      "continent": "africa",
+      "city": "Mauricio",
+      "title": "Playas paradisíacas en el océano Índico",
+      "imgURL": "https://example.com/mauritius.jpg",
+      "price": 1700,
+      "days": 8
+  },
+  {
+      "continent": "asia",
+      "city": "Singapur",
+      "title": "Explora la ciudad-estado",
+      "imgURL": "https://example.com/singapore.jpg",
+      "price": 1400,
+      "days": 5
+  },
+  {
+      "continent": "europe",
+      "city": "Viena",
+      "title": "Visita la capital austriaca",
+      "imgURL": "https://example.com/vienna.jpg",
+      "price": 1000,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Lima",
+      "title": "Explora la capital peruana",
+      "imgURL": "https://example.com/lima.jpg",
+      "price": 900,
+      "days": 5
+  },
+  {
+      "continent": "north_america",
+      "city": "Miami",
+      "title": "Descubre las playas de Miami",
+      "imgURL": "https://example.com/miami.jpg",
+      "price": 1300,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Zanzíbar",
+      "title": "Playas de arena blanca en Tanzania",
+      "imgURL": "https://example.com/zanzibar.jpg",
+      "price": 1600,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Dubái",
+      "title": "Explora la ciudad de los rascacielos",
+      "imgURL": "https://example.com/dubai.jpg",
+      "price": 1800,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Praga",
+      "title": "Visita la ciudad de los cien spires",
+      "imgURL": "https://example.com/prague.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Quito",
+      "title": "Explora la capital ecuatoriana",
+      "imgURL": "https://example.com/quito.jpg",
+      "price": 820,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Toronto",
+      "title": "Descubre la ciudad canadiense",
+      "imgURL": "https://example.com/toronto.jpg",
+      "price": 1150,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Casablanca",
+      "title": "Explora la ciudad marroquí",
+      "imgURL": "https://example.com/casablanca.jpg",
+      "price": 850,
+      "days": 4
+  },
+  {
+      "continent": "asia",
+      "city": "Kyoto",
+      "title": "Descubre la ciudad histórica de Japón",
+      "imgURL": "https://example.com/kyoto.jpg",
+      "price": 1500,
+      "days": 6
+  },
+  {
+      "continent": "europe",
+      "city": "Barcelona",
+      "title": "Visita la ciudad española",
+      "imgURL": "https://example.com/barcelona.jpg",
+      "price": 1100,
+      "days": 7
+  },
+  {
+      "continent": "south_america",
+      "city": "Sao Paulo",
+      "title": "Explora la ciudad brasileña",
+      "imgURL": "https://example.com/saopaulo.jpg",
+      "price": 850,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Seattle",
+      "title": "Descubre la ciudad de la aguja espacial",
+      "imgURL": "https://example.com/seattle.jpg",
+      "price": 1050,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Túnez",
+      "title": "Explora la ciudad mediterránea",
+      "imgURL": "https://example.com/tunis.jpg",
+      "price": 900,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Delhi",
+      "title": "Descubre la capital de la India",
+      "imgURL": "https://example.com/delhi.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Viena",
+      "title": "Visita la capital austriaca",
+      "imgURL": "https://example.com/vienna.jpg",
+      "price": 1000,
+      "days": 6
+  },
+  {
+    "continent": "Oceanía",
+    "city": "Melbourne",
+    "title": "Descubre la ciudad australiana",
+    "imgURL": "https://example.com/melbourne.jpg",
+    "price": 1200,
+    "days": 7
+  },
+  {
+      "continent": "south_america",
+      "city": "Mendoza",
+      "title": "Explora la región vinícola de Argentina",
+      "imgURL": "https://example.com/mendoza.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "north_america",
+      "city": "San Diego",
+      "title": "Disfruta de las playas de California",
+      "imgURL": "https://example.com/sandiego.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "asia",
+      "city": "Seúl",
+      "title": "Explora la capital de Corea del Sur",
+      "imgURL": "https://example.com/seoul.jpg",
+      "price": 1400,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Atenas",
+      "title": "Visita la cuna de la civilización griega",
+      "imgURL": "https://example.com/athens.jpg",
+      "price": 1050,
+      "days": 6
+  },
+  {
+      "continent": "africa",
+      "city": "Zimbabue",
+      "title": "Safari en el Parque Nacional de Hwange",
+      "imgURL": "https://example.com/zimbabwe.jpg",
+      "price": 1600,
+      "days": 8
+  },
+  {
+      "continent": "south_america",
+      "city": "Cusco",
+      "title": "Explora la antigua capital inca",
+      "imgURL": "https://example.com/cusco.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Las Vegas",
+      "title": "Descubre la ciudad del entretenimiento",
+      "imgURL": "https://example.com/lasvegas.jpg",
+      "price": 1150,
+      "days": 4
+  },
+  {
+      "continent": "asia",
+      "city": "Bangkok",
+      "title": "Explora la capital de Tailandia",
+      "imgURL": "https://example.com/bangkok.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Berlín",
+      "title": "Visita la capital alemana",
+      "imgURL": "https://example.com/berlin.jpg",
+      "price": 1000,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Cartagena",
+      "title": "Descubre la ciudad amurallada de Colombia",
+      "imgURL": "https://example.com/cartagena.jpg",
+      "price": 850,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Boston",
+      "title": "Explora la ciudad histórica de Massachusetts",
+      "imgURL": "https://example.com/boston.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "asia",
+      "city": "Pekín",
+      "title": "Descubre la capital de China",
+      "imgURL": "https://example.com/beijing.jpg",
+      "price": 1400,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Roma",
+      "title": "Descubre la antigua Roma",
+      "imgURL": "https://example.com/rome.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Bogotá",
+      "title": "Explora la capital de Colombia",
+      "imgURL": "https://example.com/bogota.jpg",
+      "price": 820,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Chicago",
+      "title": "Descubre la ciudad de los vientos",
+      "imgURL": "https://example.com/chicago.jpg",
+      "price": 1050,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Nairobi",
+      "title": "Safari en Kenia",
+      "imgURL": "https://example.com/nairobi.jpg",
+      "price": 1200,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Hong Kong",
+      "title": "Explora la ciudad asiática",
+      "imgURL": "https://example.com/hongkong.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Ámsterdam",
+      "title": "Visita la ciudad de los canales",
+      "imgURL": "https://example.com/amsterdam.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Santiago",
+      "title": "Descubre la capital chilena",
+      "imgURL": "https://example.com/santiago.jpg",
+      "price": 850,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Los Ángeles",
+      "title": "Explora la ciudad de los sueños",
+      "imgURL": "https://example.com/losangeles.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "africa",
+      "city": "Marrakech",
+      "title": "Viaje a la ciudad de las especias",
+      "imgURL": "https://example.com/marrakech.jpg",
+      "price": 850,
+      "days": 5
+  },
+  {
+      "continent": "asia",
+      "city": "Pekín",
+      "title": "Explora la capital de China",
+      "imgURL": "https://example.com/beijing.jpg",
+      "price": 1400,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Roma",
+      "title": "Descubre la antigua Roma",
+      "imgURL": "https://example.com/rome.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Bogotá",
+      "title": "Explora la capital de Colombia",
+      "imgURL": "https://example.com/bogota.jpg",
+      "price": 820,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Chicago",
+      "title": "Descubre la ciudad de los vientos",
+      "imgURL": "https://example.com/chicago.jpg",
+      "price": 1050,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Nairobi",
+      "title": "Safari en Kenia",
+      "imgURL": "https://example.com/nairobi.jpg",
+      "price": 1200,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Hong Kong",
+      "title": "Explora la ciudad asiática",
+      "imgURL": "https://example.com/hongkong.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Ámsterdam",
+      "title": "Visita la ciudad de los canales",
+      "imgURL": "https://example.com/amsterdam.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Santiago",
+      "title": "Descubre la capital chilena",
+      "imgURL": "https://example.com/santiago.jpg",
+      "price": 850,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Los Ángeles",
+      "title": "Explora la ciudad de los sueños",
+      "imgURL": "https://example.com/losangeles.jpg",
+      "price": 1100,
+      "days": 6
+  },
+  {
+      "continent": "africa",
+      "city": "Marrakech",
+      "title": "Viaje a la ciudad de las especias",
+      "imgURL": "https://example.com/marrakech.jpg",
+      "price": 850,
+      "days": 5
+  },
+  {
+      "continent": "asia",
+      "city": "Pekín",
+      "title": "Explora la capital de China",
+      "imgURL": "https://example.com/beijing.jpg",
+      "price": 1400,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Roma",
+      "title": "Descubre la antigua Roma",
+      "imgURL": "https://example.com/rome.jpg",
+      "price": 950,
+      "days": 6
+  },
+  {
+      "continent": "south_america",
+      "city": "Bogotá",
+      "title": "Explora la capital de Colombia",
+      "imgURL": "https://example.com/bogota.jpg",
+      "price": 820,
+      "days": 6
+  },
+  {
+      "continent": "north_america",
+      "city": "Chicago",
+      "title": "Descubre la ciudad de los vientos",
+      "imgURL": "https://example.com/chicago.jpg",
+      "price": 1050,
+      "days": 5
+  },
+  {
+      "continent": "africa",
+      "city": "Nairobi",
+      "title": "Safari en Kenia",
+      "imgURL": "https://example.com/nairobi.jpg",
+      "price": 1200,
+      "days": 7
+  },
+  {
+      "continent": "asia",
+      "city": "Hong Kong",
+      "title": "Explora la ciudad asiática",
+      "imgURL": "https://example.com/hongkong.jpg",
+      "price": 1300,
+      "days": 7
+  },
+  {
+      "continent": "europe",
+      "city": "Ámsterdam",
+      "title": "Visita la ciudad de los canales",
+      "imgURL": "https://example.com/amsterdam.jpg",
+      "price": 950,
+      "days": 5
+  },
+  {
+      "continent": "south_america",
+      "city": "Santiago",
+      "title": "Descubre la capital chilena",
+      "imgURL": "https://example.com/santiago.jpg",
+      "price": 850,
+      "days": 6
+  }
+]

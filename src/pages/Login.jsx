@@ -5,7 +5,7 @@ import Footear from '../components/layout/Footear'
 const Login = () => {
   return (
     <main className='h-screen w-full flex flex-col justify-between'>
-      <section className='w-full p-2 grid items-center sm:grid-cols-2 grid-cols-1 my-auto'>
+      <section className='w-full p-2 grid items-center sm:grid-cols-2 grid-cols-1 m-auto max-w-6xl'>
         <section className='grid grid-rows-[auto_1fr_auto] gap-5'>
           <Link to={'/'} className='text-3xl font-bold text-cyan-500'>Travling!</Link>
           <div className='grid max-w-xs gap-4 mx-auto'>
@@ -39,7 +39,6 @@ const Login = () => {
               <span>Facebook</span>
             </button>
           </div>
-          {/* <h4 className='text-gray-400 text-xs'>© 2023 Travling!. Reservados todos los derechos</h4> */}
         </section>
         <section className='hidden sm:grid bg-cyan-500 rounded-2xl py-10 px-4 bg relative h-[100%] max-w-md mx-auto w-[100%]'>
           <div className="absolute w-full h-full z-0">
