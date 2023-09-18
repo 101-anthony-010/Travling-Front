@@ -1,24 +1,48 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+import { useDispatch, useSelector } from 'react-redux'
+
 import Footear from '../components/layout/Footear'
+import Loader from '../components/layout/Loader'
+
+import { loginUser } from '../store/slices/loginUserSlice'
+
+const DEFAULT_VALUES = {
+  email: "",
+  password: ""
+}
 
 const Login = () => {
-  return (
-    <main className='h-screen w-full flex flex-col justify-between'>
+  const dispatch = useDispatch()
+  const { register, handleSubmit, reset } = useForm()
+  const { isLoader, token } = useSelector( store => store.loginUserSlice)
+
+  const submit = (data) => {
+    dispatch(loginUser(data))
+    reset(DEFAULT_VALUES)
+  }
+
+  if (!token) {
+    return (
+      <main className='h-screen w-full flex flex-col justify-between'>
+      {
+        isLoader ? "" : (<Loader/>)
+      }
       <section className='w-full p-2 grid items-center sm:grid-cols-2 grid-cols-1 m-auto max-w-6xl'>
         <section className='grid grid-rows-[auto_1fr_auto] gap-5'>
           <Link to={'/'} className='text-3xl font-bold text-cyan-500'>Travling!</Link>
           <div className='grid max-w-xs gap-4 mx-auto'>
-            <form action="" className='mx-auto max-w-xs p-2 grid justify-center items-center gap-3'>
+            <form onSubmit={handleSubmit(submit)} className='mx-auto max-w-xs p-2 grid justify-center items-center gap-3'>
               <div className='w-full flex justify-between items-center'>
                 <h3 className='font-semibold text-xl'>Travel</h3>
                 <h4 className='text-cyan-500 font-semibold'>hazlo ahora!</h4>
               </div>
               <div className='w-[100%]'>
-                <input className='p-3 rounded-md border w-full' type="text" placeholder='Correo'/>
+                <input id='email' {...register("email", {required: true})} className='p-3 rounded-md border w-full' type="text" placeholder='Correo'/>
               </div>
               <div className='w-[100%]'>
-                <input className='p-3 rounded-md border w-full' type="password" placeholder='Contraseña'/>
+                <input id='password' {...register("password", {required: true})} className='p-3 rounded-md border w-full' type="password" placeholder='Contraseña'/>
               </div>
               <button className='rounded-md bg-cyan-500 p-3 text-white font-bold'>Login</button>
               <h3 className='text-xs'>No cuentas con una cuenta? <span className='text-cyan-500 font-bold'><Link to={'/signup'}>Registrate ahora!!</Link></span></h3>
@@ -57,6 +81,10 @@ const Login = () => {
       </div>
     </main>
   )
+} else {
+  return <Navigate to={'/'}/>
+}
+
 }
 
 export default Login

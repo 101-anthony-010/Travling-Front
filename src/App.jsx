@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import ContactUs from './pages/ContactUs'
 import Product from './pages/Product'
+import ProtectedAuth from './components/auth/ProtectedAuth'
 
 function App() {
 
@@ -17,8 +18,10 @@ function App() {
       <Routes>
         <Route path='/login' element={<Login/>}/>        
         <Route path='/signup' element={<Signup/>}/>        
-        <Route path='/' element={<Home/>}/>        
-        <Route path='/aboutUs' element={<AboutUs/>}/>        
+        <Route path='/' element={<Home/>}/>
+        <Route element={<ProtectedAuth/>}>
+          <Route path='/aboutUs' element={<AboutUs/>}/>        
+        </Route>
         <Route path='/contactUs' element={<ContactUs/>}/>        
         <Route path='/product' element={<Product/>}/>        
       </Routes>

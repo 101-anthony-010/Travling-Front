@@ -5,6 +5,8 @@ import { changeIsShowMenu } from '../../store/slices/menu.slice'
 
 const Navbar = () => {
   const dispatch = useDispatch()
+  const { token } = useSelector( store => store.loginUserSlice)
+
 
   const handleClickChangeOpen = () => {
     dispatch(changeIsShowMenu())
@@ -21,7 +23,17 @@ const Navbar = () => {
           <Link to={'/aboutUs'}>About Us</Link>
           <Link to={'/contactUs'}>Contact Us</Link>
         </div>
-        <Link className='flex gap-2 font-semibold text-white rounded-md bg-orange-400 px-5 cursor-pointer py-1.5' to={'/login'}>Login</Link>
+        {
+          token ? (
+            <section>
+              <div className='cursor-pointer w-[40px] h-[40px] m-2'>
+                <img src="/images/beach.jpg" className='rounded-full object-cover w-full h-full' alt="" />
+              </div>
+            </section>
+          ) : (
+            <Link className='flex gap-2 font-semibold text-white rounded-md bg-orange-400 px-5 cursor-pointer py-1.5' to={'/login'}>Login</Link>
+          )
+        }
       </section>
       <div className='sm:hidden text-right text-2xl cursor-pointer'>
         <i onClick={handleClickChangeOpen} className='bx bx-menu' ></i>

@@ -109,7 +109,7 @@ const Home = () => {
                 <h5 className='text-gray-500 text-xs'>Vitae donec pellentesque a aliquam et ultricies auctor.</h5>
               </div>
             </div>
-            <Link><span className='grid grid-cols-[auto_1fr] gap-2 font-semibold items-center hover:text-cyan-500'>Another Product<i className='bx bx-chevron-right'></i></span></Link>
+            <Link to={'/product'}><span className='grid grid-cols-[auto_1fr] gap-2 font-semibold items-center hover:text-cyan-500'>Another Product<i className='bx bx-chevron-right'></i></span></Link>
           </div>
         </div>
       </section>

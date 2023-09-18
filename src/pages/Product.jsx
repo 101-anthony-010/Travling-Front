@@ -27,7 +27,7 @@ const Product = () => {
   }
 
   const paginationLogic = () => {
-    const PRODUCTS_PER_PAGE = 12
+    const PRODUCTS_PER_PAGE = 10
 
     const sliceStart = (currentPage -1) * PRODUCTS_PER_PAGE
     const sliceEnd = sliceStart + PRODUCTS_PER_PAGE

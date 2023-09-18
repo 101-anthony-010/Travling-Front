@@ -8,7 +8,7 @@ const menuSlice = createSlice({
   initialState,
   reducers: {
     changeIsShowMenu: (state) => {
-      state.isShowMenu =!state.isShowMenu
+      state.isShowMenu = !state.isShowMenu
     }
   }
 })
