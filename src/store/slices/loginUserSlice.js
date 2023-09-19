@@ -23,6 +23,11 @@ const loginUserSlice = createSlice({
         return newState
       }
     },
+    signUpIn: (state, action) => {
+      if (action.payload) {
+        const newState = ''
+      }
+    },
     loader: (state) => {
       state.isLoader = !state.isLoader
     } 
@@ -35,16 +40,26 @@ export const {
 } = loginUserSlice.actions
 
 export const loginUser = (data) => (dispatch) => {
-    dispatch(loader())
+  dispatch(loader())
   axios.post("http://localhost:3000/api/v1/users/login", data)
-      .then(res => {
-        dispatch(loginIn(res.data))
-        dispatch(loader())
-      })
-      .catch(err => {
-        console.log(err)
-        dispatch(loader())
-      })
+    .then(res => {
+      dispatch(loginIn(res.data))
+      dispatch(loader())
+    })
+    .catch(err => {
+      console.log(err)
+      dispatch(loader())
+  })
+}
+
+export const registerUser = (data) => (dispatch) => {
+  dispatch(loader())
+  axios.post("http://localhost:3000/api/v1/users/signup", data)
+    .then(res => dispatch(loader()))
+    .catch(err => {
+      console.log(err)
+      dispatch(loader())
+    })
 }
 
 export default loginUserSlice.reducer

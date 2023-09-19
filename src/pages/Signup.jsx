@@ -1,27 +1,50 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Footear from '../components/layout/Footear'
+import { useForm } from 'react-hook-form'
+import { useDispatch, useSelector } from 'react-redux'
 
+import { registerUser } from '../store/slices/loginUserSlice'
+
+import Footear from '../components/layout/Footear'
+import Loader from '../components/layout/Loader'
+
+const DEFAULT_VALUES = {
+  name: '',
+  email: "",
+  password: ""
+}
 const Signup = () => {
+  const { register, handleSubmit, reset } = useForm()
+  const dispatch = useDispatch()
+  const { isLoader } = useSelector( store => store.loginUserSlice)
+
+  const submit = (data) => {
+    dispatch(registerUser(data))    
+    reset(DEFAULT_VALUES)
+  }
+
   return (
     <main className='h-screen w-full flex flex-col justify-between'>
+      {
+        isLoader ? "" : (<Loader/>)
+      }
       <section className='w-full p-2 grid items-center sm:grid-cols-2 grid-cols-1 m-auto max-w-6xl'>
         <section className='grid grid-rows-[auto_1fr_auto] gap-5'>
           <Link to={'/'} className='text-3xl font-bold text-cyan-500'>Travling!</Link>
           <div className='grid max-w-xs gap-4 mx-auto'>
-            <form action="" className='mx-auto max-w-xs p-2 grid justify-center items-center gap-3'>
+            <form onSubmit={handleSubmit(submit)} action="" className='mx-auto max-w-xs p-2 grid justify-center items-center gap-3'>
               <div className='w-full flex justify-between items-center'>
                 <h3 className='font-semibold text-xl'>Travel</h3>
                 <h4 className='text-cyan-500 font-semibold'>hazlo ahora!</h4>
               </div>
               <div className='w-[100%]'>
-                <input className='p-3 rounded-md border w-full' type="text" placeholder='Nombre'/>
+                <input className='p-3 rounded-md border w-full' id='name' {...register("name", {required:true})} type="text" placeholder='Nombre'/>
               </div>
               <div className='w-[100%]'>
-                <input className='p-3 rounded-md border w-full' type="text" placeholder='Correo'/>
+                <input className='p-3 rounded-md border w-full' id='email' {...register("email", {required:true})} type="text" placeholder='Correo'/>
               </div>
               <div className='w-[100%]'>
-                <input className='p-3 rounded-md border w-full' type="password" placeholder='Contraseña'/>
+                <input className='p-3 rounded-md border w-full' id='password' {...register("password", {required:true})} type="password" placeholder='Contraseña'/>
               </div>
               <button className='rounded-md bg-cyan-500 p-3 text-white font-bold'>Registrar</button>
               <h3 className='text-xs'>No cuentas con una cuenta? <span className='text-cyan-500 font-bold'><Link to={'/login'}>Ingresa ahora!!</Link></span></h3>
