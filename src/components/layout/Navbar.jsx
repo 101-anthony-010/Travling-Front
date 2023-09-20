@@ -27,7 +27,7 @@ const Navbar = () => {
           token ? (
             <section>
               <div className='cursor-pointer w-[40px] h-[40px] m-2'>
-                <img src="/images/beach.jpg" className='rounded-full object-cover w-full h-full' alt="" />
+                <img src="/images/perfil.png" className='rounded-full object-cover w-full h-full' alt="" />
               </div>
             </section>
           ) : (

@@ -41,7 +41,7 @@ export const {
 
 export const loginUser = (data) => (dispatch) => {
   dispatch(loader())
-  axios.post("http://localhost:3000/api/v1/users/login", data)
+  axios.post("http://34.228.224.165:3002/api/v1/users/login", data)
     .then(res => {
       dispatch(loginIn(res.data))
       dispatch(loader())
@@ -54,7 +54,7 @@ export const loginUser = (data) => (dispatch) => {
 
 export const registerUser = (data) => (dispatch) => {
   dispatch(loader())
-  axios.post("http://localhost:3000/api/v1/users/signup", data)
+  axios.post("http://34.228.224.165:3002/api/v1/users/signup", data)
     .then(res => dispatch(loader()))
     .catch(err => {
       console.log(err)
